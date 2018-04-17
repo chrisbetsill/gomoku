@@ -1,0 +1,6 @@
+#!/bin/bash
+NumGames=100
+for i in `seq $NumGames`; do
+java gomoku &
+java CopyOfgomoku
+done

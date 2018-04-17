@@ -1,0 +1,24 @@
+
+Classes
+
+- gomoku.java
+	This is the adaptive gomoku client, which learns from each game played using the LMS method, and implements a search method with Alpha Beta Pruning
+
+- move.java
+	This is a class for storing information about possible moves, including position, features, and overall strength.
+
+- CopyOfgomoku.java
+	This is a copy of the gomoku client, which does note update the wait.
+
+Bash Program
+
+- run 
+	This is mainly used for training, allowing my client to play x number of games against a specified opponent.
+
+Text Files
+
+ - weights.txt
+ 	This is where the updated weights are stored and retrieved for each game played.
+
+All necessary programs are already compiled, however if it is necessary to re-compile any class, open a terminal and run the command "javac className.java" (e.g. javac gomoku.java). After all classes are compiled, run the server (not included) and proceed to use the terminal to run "java gomoku" to initialize the adaptive client. Then initiate another competing client. While provided client does learn through every match, it may be beneficial to run the bash script "run" using "./run" in the terminal. This script can be modified to play any number of games against any client (it is defaulted to 100 games against the class GomokuProject), just open the script, adjust the desired fields, and save.
+
